@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succulent Garden | 多肉植物のある暮らし</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+            background-color: #f9fbf9;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1446071103084-c257b5f70672?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .succulent-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .custom-shape-divider-bottom-1678234601 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .custom-shape-divider-bottom-1678234601 svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px);
+            height: 60px;
+        }
+        .custom-shape-divider-bottom-1678234601 .shape-fill {
+            fill: #f9fbf9;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-green-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                    <span class="text-xl font-bold text-green-800 tracking-wider">Succulent Life</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-green-600 transition">魅力</a>
+                    <a href="#types" class="text-gray-600 hover:text-green-600 transition">種類</a>
+                    <a href="#care" class="text-gray-600 hover:text-green-600 transition">育て方</a>
+                    <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">お問い合わせ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600"><i class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center text-center text-white hero-gradient">
+        <div class="z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">小さな緑、大きな癒し。</h1>
+            <p class="text-lg md:text-2xl mb-8 font-light drop-shadow-md">ぷにぷにとした質感、個性豊かなカタチ。<br class="hidden md:inline">多肉植物と一緒に、心安らぐ毎日を。</p>
+            <a href="#types" class="inline-block bg-white text-green-700 font-bold px-8 py-3 rounded-full shadow-lg hover:bg-green-50 transition transform hover:scale-105">
+                コレクションを見る
+            </a>
+        </div>
+        <div class="custom-shape-divider-bottom-1678234601">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-green-800 mb-8">多肉植物とは？</h2>
+            <p class="text-lg leading-relaxed text-gray-600 mb-12">
+                葉、茎、根に水分を蓄えることができる植物の総称です。<br>
+                乾燥に強く、独特のぷっくりとした見た目が特徴で、手間がかかりにくいことからインテリアとしても大人気です。<br>
+                色鮮やかに紅葉するものや、幾何学的な模様を描くものなど、その多様性は無限大です。
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-green-50">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tint text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">水やりが楽</h3>
+                    <p class="text-sm text-gray-500">週に1回〜月1回程度の水やりでOK。忙しい方にも最適です。</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-green-50">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">インテリアに</h3>
+                    <p class="text-sm text-gray-500">机の上や窓際など、小さなスペースで手軽に楽しめます。</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-green-50">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">紅葉を楽しむ</h3>
+                    <p class="text-sm text-gray-500">季節によってピンクや赤に色づき、四季の移ろいを感じられます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Gallery -->
+    <section id="types" class="py-20 bg-green-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-green-800">人気の種類</h2>
+                <div class="h-1 w-20 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Echeveria -->
+                <div class="succulent-card bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="エケベリア" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <span class="text-xs text-green-500 font-bold uppercase tracking-widest">Echeveria</span>
+                        <h3 class="text-xl font-bold mt-2">エケベリア</h3>
+                        <p class="text-sm text-gray-500 mt-2">バラの花のようなロゼット状の葉が美しい「多肉の女王」。</p>
+                    </div>
+                </div>
+
+                <!-- Haworthia -->
+                <div class="succulent-card bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1521503862198-2ae9a997bbc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="ハオルチア" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <span class="text-xs text-green-500 font-bold uppercase tracking-widest">Haworthia</span>
+                        <h3 class="text-xl font-bold mt-2">ハオルチア</h3>
+                        <p class="text-sm text-gray-500 mt-2">「窓」と呼ばれる透明な葉先が宝石のように輝きます。</p>
+                    </div>
+                </div>
+
+                <!-- Sedum -->
+                <div class="succulent-card bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="セダム" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <span class="text-xs text-green-500 font-bold uppercase tracking-widest">Sedum</span>
+                        <h3 class="text-xl font-bold mt-2">セダム</h3>
+                        <p class="text-sm text-gray-500 mt-2">小さな葉が密集して育つ、寄せ植えには欠かせない名脇役。</p>
+                    </div>
+                </div>
+
+                <!-- Lithops -->
+                <div class="succulent-card bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1508266205244-93881df33934?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="リトープス" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <span class="text-xs text-green-500 font-bold uppercase tracking-widest">Lithops</span>
+                        <h3 class="text-xl font-bold mt-2">リトープス</h3>
+                        <p class="text-sm text-gray-500 mt-2">「生ける宝石」とも呼ばれる、脱皮をする不思議な多肉植物。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Tips -->
+    <section id="care" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-green-800 text-center mb-12">育て方のポイント</h2>
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row gap-6 items-start p-8 bg-white rounded-2xl border-l-4 border-green-400 shadow-sm">
+                    <div class="text-4xl text-green-200 font-bold">01</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">日当たりの良い場所へ</h4>
+                        <p class="text-gray-600">多肉植物は日光が大好き。基本的には風通しの良い、明るい窓際や屋外で育てましょう。ただし、真夏の直射日光は葉焼けの原因になるので注意が必要です。</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start p-8 bg-white rounded-2xl border-l-4 border-green-400 shadow-sm">
+                    <div class="text-4xl text-green-200 font-bold">02</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">水やりは「土が乾いてから」</h4>
+                        <p class="text-gray-600">「毎日水をあげなきゃ」は禁物。土がカラカラに乾いて数日経ってから、鉢底から水が出るぐらいたっぷりあげましょう。冬場は休眠期なので控えめに。</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start p-8 bg-white rounded-2xl border-l-4 border-green-400 shadow-sm">
+                    <div class="text-4xl text-green-200 font-bold">03</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">水はけの良い土を選ぶ</h4>
+                        <p class="text-gray-600">湿気が多すぎると根腐れを起こします。市販の「多肉植物用の土」を使うのが一番の近道です。鉢も水はけの穴が開いているものを選びましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter/Contact -->
+    <section id="contact" class="py-20 bg-green-900 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">緑のある暮らしを始めませんか？</h2>
+            <p class="mb-10 text-green-100 opacity-80">新着の種類やお手入れのアドバイスを定期的にお届けします。</p>
+            <form class="flex flex-col sm:flex-row gap-4" onsubmit="event.preventDefault(); alert('ご登録ありがとうございます！');">
+                <input type="email" placeholder="メールアドレスを入力" class="flex-grow px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-4 focus:ring-green-400">
+                <button type="submit" class="bg-green-500 hover:bg-green-400 text-white font-bold px-10 py-4 rounded-full transition shadow-lg">
+                    購読する
+                </button>
+            </form>
+            <div class="mt-12 flex justify-center space-x-6 text-2xl">
+                <a href="#" class="hover:text-green-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-green-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-green-400 transition"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-green-950 text-green-200 text-center text-sm">
+        <p>&copy; 2024 Succulent Life. All rights reserved.</p>
+        <p class="mt-2 text-green-600">Designed for plant lovers around the world.</p>
+    </footer>
+
+    <script>
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Fade-in effect on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition', 'duration-1000', 'opacity-0');
+            section.style.transform = 'translateY(20px)';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
